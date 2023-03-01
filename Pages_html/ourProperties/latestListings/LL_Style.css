@@ -9,8 +9,8 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
+    height: 750px;
+    background-image: url("../../../IMPORTANT_RESOURCES/Images/latestListing.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -197,7 +197,7 @@ body{
 }
 
 .tittleHeader_box{
-	height: 600px;
+	height: 800px;
 }
 
 .tittle_Header{

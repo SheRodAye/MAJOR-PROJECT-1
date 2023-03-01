@@ -9,7 +9,7 @@ body{
 }
 
 .background {
-    height: 600px;
+    height: 750px;
     background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -197,7 +197,7 @@ body{
 }
 
 .tittleHeader_box{
-	height: 600px;
+	height: 800px;
 }
 
 .tittle_Header{
