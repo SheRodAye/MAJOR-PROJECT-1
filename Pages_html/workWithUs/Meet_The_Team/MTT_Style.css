@@ -8,13 +8,36 @@ body{
 	overflow-x: hidden;
 }
 
-.background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+.sec1Tittle{
+    height: 500px;
+    background-attachment: fixed;
+
+}
+
+.meetTheTeam{
+    font-family: 'Poppins', sans-serif;
+    font-size: 60px;
+}
+
+.mtt_fav{
+    font-size: 50px;
+    background-color: #777474;
+    border-radius: 70px;
+}
+
+.sec2BGimg{
+    height: 800px;
+    background: url("https://bddomingorealtyandconstructionworks.files.wordpress.com/2022/03/draft-1.jpg?w=1024");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.sec3{
+    height: 700px;
+    background: url("https://bddomingorealtyandconstructionworks.files.wordpress.com/2022/03/cover_draft-1.jpg?w=1024");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .nav_ {
