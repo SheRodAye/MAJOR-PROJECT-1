@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>sRa Real Estate Websites</title>
+    <link rel="stylesheet" href="./IMPORTANT_RESOURCES/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./mainPageStyle.css">
+    <script src="./IMPORTANT_RESOURCES/gsap.min.js" defer></script>
+    <script src="./JAVASCRIPT/declaringVar.js" defer></script>
+    <script src="./JAVASCRIPT/function.js" defer></script>
+    <script src="./JAVASCRIPT/animation.js" defer ></script>
+</head>
+<body>
+
+   
+    <header>
+    <div class="background position-relative">
+        <div class="container-fluid overflow-hidden _nav _nav2">
+            <div class="row">
+                <div class="col-lg-2 col-sm-6 logo" id="img"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/imageinheader/S R A 1.png" alt="SRA Logo" ></div>
+                <div class="col-lg-9 col-md-9 col-sm-6 justify-content-lg-end align-items-center text-wrap d-md-none d-sm-none d-lg-flex _navLink">
+                <a class="text-decoration-none navMain nav1" href="#">OUR PROPERTIES</a>
+                <a class="text-decoration-none navMain nav2" href="#">NEIGHBORHOODS</a>
+                <a class="text-decoration-none navMain nav3" href="#">WORK WITH US</a>
+                <a class="text-decoration-none navMain nav4" href="#">ACCOUNT</a>
+                <a class="text-decoration-none navMain nav5" href="#">ABOUT US</a>
+                <a class="text-decoration-none navMain nav6" href="#">CONTACT US</a>
+                </div>
+                <div class="col d-flex justify-content-lg-center align-items-center justify-content-sm-end"><svg onclick="openMenu()" class="_menu" xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
+            </div>
+        </div>
+        <div class="sidebar_menu pt-5 ps-5">
+            <div class="row">
+                <div class="col d-flex justify-content-end me-5 mb-4 pb-4"><svg onclick="closeMenu()" class="menuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="32px" width="32px" fill="white"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
+            </div>
+            <div class="sidebar_link">
+            <div class="row">
+                <div class="col menu_list ourProperties" onclick="showOP()"><a><span class="effect1">OUR PROPERTIES</span> <span><i class="fa-solid fa-chevron-down arrow1"></i></span><a/></div>
+            <div class="ourProperties_list">
+                <div class="row "><a class="op1 dropDownList" href="./Pages_html/ourProperties/topSoldListings/topSoldListing.html">TOP SOLD LISTING</a></div>
+                <div class="row "><a class="op2 dropDownList" href="#">PROMO LISTING</a></div>
+                <div class="row "><a class="op3 dropDownList" href="#">LATEST LISTING</a></div>
+                <div class="row "><a class="op4 dropDownList" href="#">RENTAL LISTING</a></div>
+                <div class="row "><a class="op5 dropDownList" href="#">LOT FOR SALE</a></div>
+                <div class="row "><a class="op6 dropDownList" href="#">LOT FOR LEASE</a></div>
+				<div class="row "><a class="op6 dropDownList" href="#">COMMERCIAL PROPERTIES</a></div>
+				<div class="row "><a class="op6 dropDownList" href="#">CONDO UNITS</a></div>
+				<div class="row "><a class="op6 dropDownList" href="#">APARTMENT LISTING</a></div>
+				<div class="row "><a class="op6 dropDownList" href="#">UNDER CONSTRUCTION</a></div>
+				<div class="row "><a class="op6 dropDownList" href="#">COMING SOON</a></div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col menu_list neighborhoods"><a href="#">NEIGHBORHOODS</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list workWithUs" onclick="showWWUS()"><a><span class="effect2">WORK WITH US</span> <span><i class="fa-solid fa-chevron-down arrow2"></i></span><a/></div>
+				 <div class="workWithUs_list">
+                <div class="row "><a class="op1 dropDownList" href="#">SELLER</a></div>
+                <div class="row "><a class="op2 dropDownList" href="#">BUYER</a></div>
+                <div class="row "><a class="op3 dropDownList" href="#">HOME VALUATION</a></div>
+                <div class="row "><a class="op4 dropDownList" href="#">MEET THE TEAM</a></div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col menu_list services" onclick="showServ()"><a><span class="effect3">SERVICES</span> <span><i class="fa-solid fa-chevron-down arrow3"></i></span><a/></div>
+				<div class="services_list">
+                <div class="row "><a class="op1 dropDownList" href="#">APPOINTMENT PROPERTY TOUR</a></div>
+                <div class="row "><a class="op2 dropDownList" href="#">HOME IMPROVEMENT SERVICES</a></div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col menu_list mortCal"><a href="#">MORTGAGE CALCULATOR</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list testim"><a href="#">TESTIMONIALS</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list aboutUs" onclick="showAboutUs()"><a><span class="effect4">ABOUT US</span> <span><i class="fa-solid fa-chevron-down arrow4"></i></span><a/></div>
+				<div class="aboutUs_list">
+                <div class="row "><a class="op1 dropDownList" href="#">ABOUT TO COMPANY</a></div>
+                <div class="row "><a class="op2 dropDownList" href="#">ACCOMPLISHMENT</a></div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col menu_list acc"><a href="#">ACCOUNT</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list logIn"><a href="#">LOG IN</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list signUp"><a href="#">SIGN UP</a></div>
+            </div>
+            <div class="row">
+                <div class="col menu_list contactUs"><a href="#">CONTACT US</a></div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    
+    
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-sm-12 text-wrap headInSec1">SRA And B.D Domingo 
+                    Realty & Construction 
+                    Works</div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12 descriptInSec1">
+                        <div class="col mt-5"><strong>B. D Domingo Realty</strong> is one of the fastest-growing Real Estate Marketing Company running since 2014 and has since served over 4000 families to find the right house and the right investment.</div> 
+                        <div class="col mt-5">We are one of the TOP Performing Realty and are accredited to major developers such as Amaia, DMCI, SMDC, Federal Land, Ayala land, and the like for condominiums. Pro-friends Inc, Camella Homes, Peakland, Homemark Inc, Raemuland, Borland Development, Apec homes, and the like for housing projects.</div>
+                        <div class="col mt-5">At present we offer various properties in locations such as Manila, Cavite, Bulacan, Batangas, Laguna, and Rizal and all over the Philippines.</div>
+                </div>
+                <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center bddr_gif"><iframe src="https://giphy.com/embed/owopWbPBQOM0YFyWZi" width="480" height="400" frameBorder="1" class="giphy-embed" allowFullScreen></iframe></div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="w-75 mx-auto my-lg-5 my-md-3 my-sm-1 border-3 border-dark" \>
+
+    <section>
+        <div class="container mt-5 px-5">
+            <div class="text-wrap text-center tittleInSec2 my-5">OUR PROPERTIES IN BATAAN, MARIVELES</div>
+            <div class="row d-flex justify-content-center align-items-center my-lg-5 p-lg-5 my-md-3 p-md-3 my-sm-1 p-sm-1 mt-sm-5">
+                <div class="col-lg-6 col-md-12">
+                <div class="row my-auto">
+                    <div class="col-10 mb-4 listTittle">RCD Land Inc,.RCD Royale Homes Mariveles</div>
+                    </div>
+                    <div class="row my-auto">
+                    <div class="col-7 listName">Daphne Single Attached Preselling</div>
+                    </div>
+                </div>
+                <div class="col"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/rcd-royale-homes-mariveles 4.png" alt="Daphne Single Attached Preselling"></div>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center my-lg-5 p-lg-5 my-md-3 p-md-3 my-sm-1 p-sm-1 mt-sm-5">
+                <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-10 mb-4 listTittle">RCD Land Inc,.RCD Royale Homes Mariveles</div>
+                    </div>
+                    <div class="row">
+                    <div class="col-7 listName">Daffodil Single Attached Preselling</div>
+                    </div>
+                </div>
+                <div class="col"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/rcd-royale-homes-mariveles2 2.png" alt="Daffodil Single Attached Preselling"></div>
+            </div>
+
+            <div class="row d-flex justify-content-center align-items-center my-lg-5 p-lg-5 my-md-3 p-md-3 my-sm-1 p-sm-1 mt-sm-5">
+                <div class="col-lg-6 col-md-12">
+                <div class="row">
+                    <div class="col-10 mb-4 listTittle">RCD Land Inc,.RCD Royale Homes Mariveles</div>
+                    </div>
+                    <div class="row">
+                    <div class="col-7 listName">Townhouse 44Townhouse Preselling</div>
+                    </div>
+                </div>
+                <div class="col"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/rcd-royale-homes-mariveles3 2.png" alt="Townhouse 44Townhouse Preselling"></div>
+            </div>
+            <div class="row">
+                <div class="col footerInSec2 text-center my-md-2 my-sm-5">WE HAVE A LOT OF PROPERTIES IN DIFFERENT PLACES IN PHILIPPINES WE HAVE <a href="#">BATAAN</a> , <a href="#">BATANGAS</a> , <a href="#">BULACAN</a> , <a href="#">CAVITE</a> , <a href="#">ILOCOS SUR</a> , <a href="#">LA UNION</a> , <a href="#">ISABELA</a> , <a href="#">LAGUNA</a> , <a href="#">METRO MANILA</a> , <a href="#">NUEVA ECIJA</a> , <a href="#">PAMPANGA</a> , <a href="#">PANGASINAN</a> , <a href="#">QUEZON</a> , <a href="#">RIZAL</a> , <a href="#">ZAMBALES</a> AND WE HAVE A LOT UPCOMING PROJECTS</div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="w-75 mx-auto my-lg-5 my-md-3 my-sm-1 border-3 border-dark" \>
+
+    <section>
+        <div class="container testimonials">
+        <div class="row">
+            <div class="col testimonialHeader">Testimonials from client</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">Agents are very accommodating. They care a lot and listen to a client's wants and needs. And they also offer varieties of units that are suitable for the client's budget for housing. They also give the best offers for housing loan as well as the best choice not just for the price but also for the quality and comfort the client is looking for in a home.</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">BDDR doesn't only provide real estate properties. It will give you a HOME whereas you always feel loved. Its agents are very welcoming and excellent. Whenever you talk with them, it feels like you are talking with your best friend. Furthermore, its houses and units have the best quality of materials - very comforting. Indeed, you would really love its properties, services, and people themselves.</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">The agents at BDDR are really accommodating. They genuinely care about their customers and pay attention to their requirements. They also have a variety of flats that are acceptable for the client's housing budget. The agents are also knowledgeable and trustworthy when it comes to financing decisions, location, and home selection, among other things. So all you have to do is get in touch with them, and they'll be right over. Its properties, services, and people would be ideal for you</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">BDDR is totally a highly recommended realty. They will give you a quality and top-tier service among others. With their #MapusongSerbisyo, they will give you the best offer based on your needs. They have responsible, reliable and trusted BDDR Angels who are are ready to assist you from inquiries up to the acquisition. No doubt that they have loyal clients and high loan approval.</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">I have reasons to highly recommend this company. First, it has agents that very accommodating that help you to choose and find your dream house, they are all reliable when it comes to giving details. Second, you have a lot of choices in which places you want to live because BDDR has a lot of property that offers you to get your dream house in your dream place. Kaya saan kapa? Edi sa BDDR na!</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">I highly recommend BDDR Realty. Unlike any Other competitors BDDR offers #MapusongSerbisyo in which they consider the needs of  your family and your budget. Thus their skilled Agents that will guide you are very accomodating and approachable</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">• BDDR Angels are really accomodating when it comes to their clients. They are approachable enough to the point that you will not hesitate to ask about your inquiries or questions.
+                • B.D Domingo Realty & Construction works, has great offers for their beloved clients like for example the difference financing loans, and the different sets of locations wherever you want to avail a house.
+                • If I were you, I will immediately message any BDDR Angels to get my dream house because here in BDDR, we always the practice the value of MAPUSONG SERBISYO.</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList">If you're looking for trusted and reliable agents and legit housing, you've come to the right place because here in BDDR clients are the priority.</div>
+        </div>
+
+        <div class="row">
+            <div class="col testimList mb-5">Purchasing and locating a home at the peak of the market was not an easy task. Agents or also called as Angels in BDDR are both professional and personable. The client's stress level is high because all of your requirements have to be satisfied. The agents/Angels at BDDR are not only amazing realtors, but they also have an excellent support structure. Whenever a customer wanted to visit a property, the agents in BDDR took action since houses are heading off the market. They negotiated and assisted all of the clients in obtaining the home of their dreams, working hard to ensure that things like upkeep are reasonable. BDDR and the agents are great and I would suggest them to anybody wanting to buy a house; you won't be disappointed.</div>
+        </div>
+    </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid p-lg-5 p-md-3 p-sm-0 footer mt-5 d-flex flex-column align-items-center">
+            <div class="row">
+                <div class="col-lg-5 col-md-5">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/Component 1.png"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/bddr logo 1.png"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 d-flex flex-column justify-content-center">
+                    <div class="row">
+                        <div class="col contactUsFooter">CONTACT US</div>
+                    </div>
+                    <div class="row">
+                        <div class="col address">4th Floor BDDR Building , B2 L10 Tangule st. 
+                            BPTHAI Subdivision. Calzada, Taguig 1637</div>
+                    </div>
+                    <div class="row">
+                        <div class="col number"><strong>For Inquiries:</strong> 0961-741-9943</div>
+                    </div>
+                    <div class="row">
+                        <div class="col email mb-sm-2"><strong>Email us at:</strong> inquire.sherodaye.info@gmail.com |
+                            rodsarsaba26@gmail.com</div>
+                    </div>
+                </div>
+                <div class="row mt-lg-0 pt-lg-0 mt-md-5 pt-md-4">
+                    <div class="col mt-lg-5 pt-lg-5 mt-md-5 pt-md-5  d-flex flex-column justify-content-center align-items-center">Website designed by<br><strong>WeMakeForYOU</strong></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid px-5 footer2 d-flex align-items-center">
+                <div class="col-lg-5 copyrightFooter">COPYRIGHT © 2023 | SHERODAYE</div>
+                <div class="col-lg-2 d-flex justify-content-lg-center justify-content-sm-end"><a href=""><img src="./IMPORTANT_RESOURCES/Images/Email logo 1.png"></a>
+                                 <a href=""><img src="./IMPORTANT_RESOURCES/Images/My project 1.png"></a>
+                </div>
+                <div class="col d-flex justify-content-end nameSRA">SHERODAYE</div>
+        </div>
+		<div class="fixed-bottom backToTop_btn onclick="scrollToTop()"><i onclick="scrollToTop()" class="fa-solid fa-arrow-up"></i></div>
+    </footer>
+
+</body>
+</html>
