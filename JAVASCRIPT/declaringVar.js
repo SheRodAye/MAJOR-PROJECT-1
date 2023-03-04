@@ -5,6 +5,7 @@ const backToTop_btn = document.querySelector(".backToTop_btn");
 const backToTop_btn_open = document.querySelector(".backToTop_btn_open");
 const background = document.getElementsByTagName("background");
 const sideBarMenu = document.querySelector("._menu");
+const sideBar = document.querySelector(".sideBar");
 const sideBarMenuClose = document.querySelector(".menuClose");
 const sidebar_menu = document.querySelector(".sidebar_menu");
 const nav1 = document.querySelector(".nav1");

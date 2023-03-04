@@ -7,9 +7,9 @@
     <title>sRa Real Estate Websites</title>
     <link rel="stylesheet" href="../../../../IMPORTANT_RESOURCES/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./PL_Style.css">
+    <link rel="stylesheet" href="./CU_Style.css">
     <script src="../../../IMPORTANT_RESOURCES/gsap.min.js" defer></script>
-    <script src="./TSL.js" defer></script>
+    <script src="../topSoldListings/TSL.js" defer></script>
 </head>
 <body>
 <header>
@@ -28,74 +28,74 @@
                 <div class="col d-flex justify-content-lg-center align-items-center justify-content-sm-end"><svg onclick="openMenu()" class="_menu" xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
             </div>
         </div>
-        <div class="sidebar_menu pt-5 ps-5">
-            <div class="row">
-                <div class="col d-flex justify-content-end me-5 mb-4 pb-4"><svg onclick="closeMenu()" class="menuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="32px" width="32px" fill="white"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
-            </div>
-            <div class="sidebar_link">
-            <div class="row">
-                <div class="col menu_list ourProperties" onclick="showOP()"><a><span class="effect1">OUR PROPERTIES</span> <span><i class="fa-solid fa-chevron-down arrow1"></i></span><a/></div>
-            <div class="ourProperties_list">
-                <div class="row "><a class="op1 dropDownList" href="./topSoldListing.html">PROMAX LISTING</a></div>
-                <div class="row "><a class="op2 dropDownList" href="#">PROMO LISTING</a></div>
-                <div class="row "><a class="op3 dropDownList" href="#">LATEST LISTING</a></div>
-                <div class="row "><a class="op4 dropDownList" href="#">RENTAL LISTING</a></div>
-                <div class="row "><a class="op5 dropDownList" href="#">LOT FOR SALE</a></div>
-                <div class="row "><a class="op6 dropDownList" href="#">LOT FOR LEASE</a></div>
-				<div class="row "><a class="op6 dropDownList" href="#">COMMERCIAL PROPERTIES</a></div>
-				<div class="row "><a class="op6 dropDownList" href="#">CONDO UNITS</a></div>
-				<div class="row "><a class="op6 dropDownList" href="#">APARTMENT LISTING</a></div>
-				<div class="row "><a class="op6 dropDownList" href="#">UNDER CONSTRUCTION</a></div>
-				<div class="row "><a class="op6 dropDownList" href="#">COMING SOON</a></div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col menu_list neighborhoods"><a href="#">NEIGHBORHOODS</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list workWithUs" onclick="showWWUS()"><a><span class="effect2">WORK WITH US</span> <span><i class="fa-solid fa-chevron-down arrow2"></i></span><a/></div>
-				 <div class="workWithUs_list">
-                <div class="row "><a class="op1 dropDownList" href="#">SELLER</a></div>
-                <div class="row "><a class="op2 dropDownList" href="#">BUYER</a></div>
-                <div class="row "><a class="op3 dropDownList" href="#">HOME VALUATION</a></div>
-                <div class="row "><a class="op4 dropDownList" href="#">MEET THE TEAM</a></div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col menu_list services" onclick="showServ()"><a><span class="effect3">SERVICES</span> <span><i class="fa-solid fa-chevron-down arrow3"></i></span><a/></div>
-				<div class="services_list">
-                <div class="row "><a class="op1 dropDownList" href="#">APPOINTMENT PROPERTY TOUR</a></div>
-                <div class="row "><a class="op2 dropDownList" href="#">HOME IMPROVEMENT SERVICES</a></div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col menu_list mortCal"><a href="#">MORTGAGE CALCULATOR</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list testim"><a href="#">TESTIMONIALS</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list aboutUs" onclick="showAboutUs()"><a><span class="effect4">ABOUT US</span> <span><i class="fa-solid fa-chevron-down arrow4"></i></span><a/></div>
-				<div class="aboutUs_list">
-                <div class="row "><a class="op1 dropDownList" href="#">ABOUT TO COMPANY</a></div>
-                <div class="row "><a class="op2 dropDownList" href="#">ACCOMPLISHMENT</a></div>
-            </div>
-            </div>
-            <div class="row">
-                <div class="col menu_list acc"><a href="#">ACCOUNT</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list logIn"><a href="#">LOG IN</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list signUp"><a href="#">SIGN UP</a></div>
-            </div>
-            <div class="row">
-                <div class="col menu_list contactUs"><a href="#">CONTACT US</a></div>
+        <div class="sideBar">
+            <div class="sidebar_menu pt-5 ps-5">
+                <div class="row">
+                    <div class="col d-flex justify-content-end me-5 mb-4 pb-4"><svg onclick="closeMenu()" class="menuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="32px" width="32px" fill="white"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
+                <div class="sidebar_link">
+                    <div class="row">
+                        <div class="col menu_list ourProperties" onclick="showOP()"><a><span class="effect1">OUR PROPERTIES</span> <span><i class="fa-solid fa-chevron-down arrow1"></i></span><a/></div>
+                    <div class="ourProperties_list">
+                        <div class="row "><a class="op1 dropDownList" href="../topSoldListings/topSoldListing.html">TOP SOLD LISTING</a></div>
+                        <div class="row "><a class="op2 dropDownList" href="../promoListings/promoListings.html">PROMO LISTING</a></div>
+                        <div class="row "><a class="op3 dropDownList" href="../latestListings/latestListings.html">LATEST LISTING</a></div>
+                        <div class="row "><a class="op4 dropDownList" href="../rentalListings/rentalListings.html">RENTAL LISTING</a></div>
+                        <div class="row "><a class="op5 dropDownList" href="../lotForSale/lotFotSale.html">LOT FOR SALE</a></div>
+                        <div class="row "><a class="op6 dropDownList" href="../lotForLease/lotForLease.html">LOT FOR LEASE</a></div>
+                        <div class="row "><a class="op6 dropDownList" href="../commercialProperties/commercialProperties.html">COMMERCIAL PROPERTIES</a></div>
+                        <div class="row "><a class="op6 dropDownList" href="../condoUnits/condoUnits.html">CONDO UNITS</a></div>
+                        <div class="row "><a class="op6 dropDownList" href="../apartmentListings/apartmentListings.html">APARTMENT LISTING</a></div>
+                        <div class="row "><a class="op6 dropDownList" href="../comingSoon/comingSoon.html">COMING SOON</a></div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list neighborhoods"><a href="../../neighborhoods/neigborhoods.html">NEIGHBORHOODS</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list workWithUs" onclick="showWWUS()"><a><span class="effect2">WORK WITH US</span> <span><i class="fa-solid fa-chevron-down arrow2"></i></span><a/></div>
+                         <div class="workWithUs_list">
+                        <div class="row "><a class="op1 dropDownList" href="../../workWithUs/Seller/seller.html">SELLER</a></div>
+                        <div class="row "><a class="op2 dropDownList" href="../../workWithUs/Buyer/buyer.html">BUYER</a></div>
+                        <div class="row "><a class="op3 dropDownList" href="../../workWithUs/Home_Valuation/homeValuation.html">HOME VALUATION</a></div>
+                        <div class="row "><a class="op4 dropDownList" href="../../workWithUs/Meet_The_Team/meetTheTeam.html">MEET THE TEAM</a></div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list services" onclick="showServ()"><a><span class="effect3">SERVICES</span> <span><i class="fa-solid fa-chevron-down arrow3"></i></span><a/></div>
+                        <div class="services_list">
+                        <div class="row "><a class="op1 dropDownList" href="../../services/appointmentPropertyTour/appointmentPropertyTour.html">APPOINTMENT PROPERTY TOUR</a></div>
+                        <div class="row "><a class="op2 dropDownList" href="../../services/homeImprovementServices/homeImprovementServices.html">HOME IMPROVEMENT SERVICES</a></div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list mortCal"><a href="../../mortgageCalculator/mortgageCalculator.html">MORTGAGE CALCULATOR</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list testim"><a href="../../testimonials/testimonials.html">TESTIMONIALS</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list aboutUs" onclick="showAboutUs()"><a><span class="effect4">ABOUT US</span> <span><i class="fa-solid fa-chevron-down arrow4"></i></span><a/></div>
+                        <div class="aboutUs_list">
+                        <div class="row "><a class="op1 dropDownList" href="../../aboutUs/aboutToCompany/aboutToCompany.html">ABOUT TO COMPANY</a></div>
+                        <div class="row "><a class="op2 dropDownList" href="../../aboutUs/accomplishment/accomplishment.html">ACCOMPLISHMENT</a></div>
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list acc"><a href="../../account/Account/Account.html">ACCOUNT</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list logIn"><a href="../../account/logIn/logIn.html">LOG IN</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list signUp"><a href="../../account/signUp/signUp.html">SIGN UP</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col menu_list contactUs"><a href="../../contactUs/contactUs.html">CONTACT US</a></div>
+                    </div>
+                </div></div>
             </div>
         </div>
-        </div>
-		<div class="tittleHeader_box d-flex align-items-center justify-content-center"><span class="tittle_Header d-flex align-items-center justify-content-center">TOP SOLD LISTINGS</span></div>
+		<div class="tittleHeader_box d-flex align-items-center justify-content-center"><span class="tittle_Header d-flex align-items-center justify-content-center">CONDO UNITS</span></div>
     </div>
    </header>
    

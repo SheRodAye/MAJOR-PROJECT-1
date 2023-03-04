@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Baskervville:ital@1&family=Fira+Sans+Condensed:wght@700&family=Lato:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Lora&family=Playfair+Display:wght@700&family=Poppins:wght@500;600;800&family=Source+Code+Pro:wght@700&display=swap');
 
+
+
+
 body{
     box-sizing: border-box;
     padding: 0;
@@ -9,16 +12,38 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
+    height: 800px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)),url(https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/zvj2rpet4eyw7jlb1fa9/littledume3);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	
 }
 
 .nav_ {
 	position: fixed;
+}
+
+.searchBar{
+    height: 60px;
+    background-color: rgba(119, 116, 116, 100%);
+    color: white;
+}
+
+.searchBar input{
+    border: none;
+    outline: none;
+    background: none;
+    width: 50%;
+    padding-left: 10px;
+    color: white;
+    font-size: 18px;
+}
+
+.searchBar input::placeholder{
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(194, 190, 190);
+    cursor: text;
 }
 
 .sidebar_link a{
@@ -117,11 +142,22 @@ body{
     transform: scale(1.05,1.05);
 }
 
+
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
+
 .sidebar_menu{
 	z-index: 1;
-	right: 0;
+	right: -10px;
 	top: 0;
     position: fixed;
+    background: #212020;
     height: 0;
     width: 0;
 	opacity: 0;
@@ -130,13 +166,13 @@ body{
 
 .sidebar_menu_open{
     z-index: 1;
-    right: -30px;
+	right: -10px;
 	top: 0;
     position: fixed;
     background: #212020;
-	opacity: 1;
     height: 1024px;
     width: 370px;
+	opacity: 1;
     transition: all 1s ease-in-out;
 }
 
@@ -160,7 +196,7 @@ body{
 
 
 .sidebar_link{
-    height:550px;
+    height:600px;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -196,8 +232,23 @@ body{
 	display: none;
 }
 
+.desInTittleHeader{
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.highlight{
+    padding-top: 10px;
+    text-align: center;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+
 .tittleHeader_box{
-	height: 600px;
+	height: 800px;
 }
 
 .tittle_Header{
@@ -207,7 +258,7 @@ body{
 	font-size: 64px;
 	line-height: 85px;
 	background: rgba(22, 22, 22, 0.5);
-	height: 166px;
+	height: 200px;
 	width: 801px;
 	color: white;
 }

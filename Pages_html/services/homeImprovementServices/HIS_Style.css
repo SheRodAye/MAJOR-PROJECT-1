@@ -8,14 +8,6 @@ body{
 	overflow-x: hidden;
 }
 
-.background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
-}
 
 .nav_ {
 	position: fixed;
@@ -29,6 +21,14 @@ body{
 .sidebar_link a:hover{
 	color:  #777474;
 }
+
+.sideBar_open{
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .navMain {
     color: black;
@@ -289,6 +289,15 @@ body{
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+}
+
+.carsousel_ {
+    z-index: -1;
+    position: relative;
+}
+
+.carsousel_ .carousel-item img{
+    height: 800px;
 }
 
 @media screen and (max-width: 575px){

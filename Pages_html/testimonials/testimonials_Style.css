@@ -9,17 +9,26 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
+    height: 710px;
+    background-image: url("https://bddomingorealtyandconstructionworks.files.wordpress.com/2022/02/feedback.jpg?w=1000");
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
 }
+
 
 .nav_ {
 	position: fixed;
 }
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .sidebar_link a{
 	color: white;
@@ -40,6 +49,11 @@ body{
 
 .navMain:hover {
     border-bottom: 1px solid white;
+}
+
+.testimImage{
+    margin-top: 170px;
+   margin-bottom: 30px;
 }
 
 .footerInSec2 a{

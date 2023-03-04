@@ -5,6 +5,7 @@ function scrollToTop(){
 
 function openMenu(){
 sidebar_menu.classList.add("sidebar_menu_open");
+sideBar.classList.add("sideBar_open");
 nav1.style.display = ("none");
 nav2.style.display = ("none");
 nav3.style.display = ("none");
@@ -32,6 +33,7 @@ arrow4.style.transform = "rotate(180deg)";
 
 function closeMenu(){
 sidebar_menu.classList.remove("sidebar_menu_open");
+sideBar.classList.remove("sideBar_open");
 nav1.style.display = ("inline-block");
 nav2.style.display = ("inline-block");	
 nav3.style.display = ("inline-block");

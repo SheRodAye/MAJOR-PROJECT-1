@@ -8,17 +8,59 @@ body{
 	overflow-x: hidden;
 }
 
-.background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+.background{
+    height: 300px;
 }
 
 .nav_ {
 	position: fixed;
+}
+
+.mortgagecal .MC{
+    font-family: 'Source Code Pro', monospace;
+}
+
+.secOfMC_box{
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.50),
+                2px 2px 1px 1px rgba(0, 0, 0, 0.40);
+    height: 500px;
+    background-color: #615D5D;
+}
+
+.tittleInMC{
+    color: white;
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.secOfMC_box label{
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+}
+
+.label {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 10px;
+
+}
+.radio label {
+    color: white;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 10px;
 }
 
 .sidebar_link a{
@@ -29,6 +71,14 @@ body{
 .sidebar_link a:hover{
 	color:  #777474;
 }
+
+.sideBar_open{
+    position: relative;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .navMain {
     color: black;

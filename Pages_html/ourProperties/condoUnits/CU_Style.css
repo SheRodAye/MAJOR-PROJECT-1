@@ -9,8 +9,8 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
+    height: 750px;
+    background-image: url("https://th.bing.com/th/id/R.be22fda93c18ff13e6abd7d9567fda77?rik=Oj74jyAGqCYwaQ&riu=http%3a%2f%2fwww.monarchprogram.org%2fwp-content%2fuploads%2f2018%2f06%2fRenting-a-Condo-vs-Apartment.jpg&ehk=tDgqDSXA%2bBCRHIHOjQBFarS5smoed0YZp%2bSK5I4RuqU%3d&risl=&pid=ImgRaw&r=0");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -20,6 +20,22 @@ body{
 .nav_ {
 	position: fixed;
 }
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .sidebar_link a{
 	color: white;
@@ -197,7 +213,7 @@ body{
 }
 
 .tittleHeader_box{
-	height: 600px;
+	height: 800px;
 }
 
 .tittle_Header{

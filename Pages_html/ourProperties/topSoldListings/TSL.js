@@ -1,6 +1,7 @@
 const backToTop_btn = document.querySelector(".backToTop_btn");
 const backToTop_btn_open = document.querySelector(".backToTop_btn_open");
 const sidebar_menu = document.querySelector(".sidebar_menu");
+const sideBar = document.querySelector(".sideBar");
 const sideBarMenu = document.querySelector("._menu");
 const nav1 = document.querySelector(".nav1");
 const nav2 = document.querySelector(".nav2");
@@ -42,6 +43,7 @@ function scrollToTop(){
 
 function openMenu(){
     sidebar_menu.classList.add("sidebar_menu_open");
+    sideBar.classList.add("sideBar_open");
     nav1.style.display = ("none");
     nav2.style.display = ("none");
     nav3.style.display = ("none");
@@ -67,6 +69,7 @@ function openMenu(){
 
     function closeMenu(){
         sidebar_menu.classList.remove("sidebar_menu_open");
+        sideBar.classList.remove("sideBar_open");
         nav1.style.display = ("inline-block");
         nav2.style.display = ("inline-block");	
         nav3.style.display = ("inline-block");
@@ -147,6 +150,25 @@ function openMenu(){
         };
         };
 
-        img1.addEventListener("hover", ()=> {
-            showHover.style.zIndex = "1";
-        })
+        // img1.addEventListener("hover", ()=> {
+        //     showHover.style.zIndex = "1";
+        // })
+
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+    'use strict';
+  
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    const forms = document.querySelectorAll('.needs-validation');
+  
+    // Loop over them and prevent submission
+    Array.prototype.slice.call(forms).forEach((form) => {
+      form.addEventListener('submit', (event) => {
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();

@@ -9,13 +9,13 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+    height: 820px;
+    background: url("https://res.cloudinary.com/luxuryp/images/w_1280,c_limit,f_auto,q_auto/idzdsl8gisnm2i6akflr/schedule");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 
 .nav_ {
 	position: fixed;
@@ -28,6 +28,18 @@ body{
 
 .sidebar_link a:hover{
 	color:  #777474;
+}
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
+
+.APT{
+    height: 1100px;
 }
 
 .navMain {
@@ -197,18 +209,19 @@ body{
 }
 
 .tittleHeader_box{
-	height: 600px;
+	height: 900px;
 }
 
 .tittle_Header{
 	font-family: 'Playfair Display';
+    text-transform: uppercase;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 64px;
 	line-height: 85px;
 	background: rgba(22, 22, 22, 0.5);
 	height: 166px;
-	width: 801px;
+	width: 1000px;
 	color: white;
 }
 
