@@ -6,20 +6,36 @@ body{
     margin: 0;
     background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), linear-gradient(0deg, rgba(134, 131, 131, 0.2), rgba(134, 131, 131, 0.2)), linear-gradient(124.63deg, rgba(99, 105, 99, 0.336) 24.86%, rgba(97, 94, 94, 0.084) 31.25%, rgba(218, 210, 210, 0.108) 36.17%, rgba(174, 165, 165, 0.156) 42.83%, rgba(129, 121, 121, 0.186) 48.38%, rgba(121, 110, 110, 0.102) 53.82%, rgba(249, 231, 231, 0.09) 61.49%, rgba(151, 140, 140, 0.084) 67.12%, rgba(202, 190, 190, 0.084) 73.45%, rgba(149, 146, 146, 0.24) 81.13%, rgba(141, 122, 122, 0.06) 86.3%, rgba(211, 196, 196, 0.09) 92.82%, rgba(123, 119, 119, 0) 100%); 
 	overflow-x: hidden;
+    
 }
 
-.background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-	
+.sectionContactUs {
+    height: 940px;
 }
+
+.contactUs {
+    height: 700px;
+    background-color: white;
+    border-radius: 5px;
+    color: black;
+}
+
+.contactUs *{
+    color: black;
+}
+
 
 .nav_ {
 	position: fixed;
 }
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .sidebar_link a{
 	color: white;

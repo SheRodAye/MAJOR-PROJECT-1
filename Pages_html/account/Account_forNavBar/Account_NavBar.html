@@ -5,209 +5,154 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>sRa Real Estate Websites</title>
-    <link rel="stylesheet" href="../../../../IMPORTANT_RESOURCES/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../IMPORTANT_RESOURCES/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./AFNB.css">
     <script src="../../../IMPORTANT_RESOURCES/gsap.min.js" defer></script>
-    <script src="./TSL.js" defer></script>
+    <script src="../../ourProperties/topSoldListings/TSL.js" defer></script>
 </head>
 <body>
     <header>
-        <div class="background position-relative">
-            <div class="container-fluid overflow-hidden _nav _nav2">
+        <div class="position-relative">
+            <div class="container-fluid overflow-hidden nav_ navbar_scroll">
                 <div class="row">
-                    <div class="col-lg-2 col-sm-6 logo" id="img"><img class="img-fluid" src="./IMPORTANT_RESOURCES/Images/imageinheader/S R A 1.png" alt="SRA Logo" ></div>
+                    <div class="col-lg-2 col-sm-6 logo" id="img"><a href="../../../index.html"><img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/imageinheader/S R A 1.png" alt="SRA Logo"></a></div>
                     <div class="col-lg-9 col-md-9 col-sm-6 justify-content-lg-end align-items-center text-wrap d-md-none d-sm-none d-lg-flex _navLink">
                     <a class="text-decoration-none navMain nav1" href="#">OUR PROPERTIES</a>
-                    <a class="text-decoration-none navMain nav2" href="./Pages_html/neighborhoods/neigborhoods.html">NEIGHBORHOODS</a>
+                    <a class="text-decoration-none navMain nav2" href="#">NEIGHBORHOODS</a>
                     <a class="text-decoration-none navMain nav3" href="#">WORK WITH US</a>
-                    <a class="text-decoration-none navMain nav4" href="./Pages_html/account/Account_forNavBar/Account_NavBar.html">ACCOUNT</a>
+                    <a class="text-decoration-none navMain nav4" href="#">ACCOUNT</a>
                     <a class="text-decoration-none navMain nav5" href="#">ABOUT US</a>
-                    <a class="text-decoration-none navMain nav6" href="./Pages_html/contactUs/contactUs.html">CONTACT US</a>
+                    <a class="text-decoration-none navMain nav6" href="#">CONTACT US</a>
                     </div>
                     <div class="col d-flex justify-content-lg-center align-items-center justify-content-sm-end"><svg onclick="openMenu()" class="_menu" xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></div>
                 </div>
             </div>
-            <div class="sidebar_menu pt-5 ps-5">
-                <div class="row">
-                    <div class="col d-flex justify-content-end me-5 mb-4 pb-4"><svg onclick="closeMenu()" class="menuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="32px" width="32px" fill="white"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
+            <div class="sideBar">
+                <div class="sidebar_menu pt-5 ps-5">
+                    <div class="row">
+                        <div class="col d-flex justify-content-end me-5 mb-4 pb-4"><svg onclick="closeMenu()" class="menuClose" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" height="32px" width="32px" fill="white"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg></div>
+                    <div class="sidebar_link">
+                        <div class="row">
+                            <div class="col menu_list ourProperties" onclick="showOP()"><a><span class="effect1">OUR PROPERTIES</span> <span><i class="fa-solid fa-chevron-down arrow1"></i></span><a/></div>
+                        <div class="ourProperties_list">
+                            <div class="row "><a class="op1 dropDownList" href="./topSoldListing.html">PROMAX LISTING</a></div>
+                            <div class="row "><a class="op2 dropDownList" href="#">PROMO LISTING</a></div>
+                            <div class="row "><a class="op3 dropDownList" href="#">LATEST LISTING</a></div>
+                            <div class="row "><a class="op4 dropDownList" href="#">RENTAL LISTING</a></div>
+                            <div class="row "><a class="op5 dropDownList" href="#">LOT FOR SALE</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">LOT FOR LEASE</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">COMMERCIAL PROPERTIES</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">CONDO UNITS</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">APARTMENT LISTING</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">UNDER CONSTRUCTION</a></div>
+                            <div class="row "><a class="op6 dropDownList" href="#">COMING SOON</a></div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list neighborhoods"><a href="#">NEIGHBORHOODS</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list workWithUs" onclick="showWWUS()"><a><span class="effect2">WORK WITH US</span> <span><i class="fa-solid fa-chevron-down arrow2"></i></span><a/></div>
+                             <div class="workWithUs_list">
+                            <div class="row "><a class="op1 dropDownList" href="#">SELLER</a></div>
+                            <div class="row "><a class="op2 dropDownList" href="#">BUYER</a></div>
+                            <div class="row "><a class="op3 dropDownList" href="#">HOME VALUATION</a></div>
+                            <div class="row "><a class="op4 dropDownList" href="#">MEET THE TEAM</a></div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list services" onclick="showServ()"><a><span class="effect3">SERVICES</span> <span><i class="fa-solid fa-chevron-down arrow3"></i></span><a/></div>
+                            <div class="services_list">
+                            <div class="row "><a class="op1 dropDownList" href="#">APPOINTMENT PROPERTY TOUR</a></div>
+                            <div class="row "><a class="op2 dropDownList" href="#">HOME IMPROVEMENT SERVICES</a></div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list mortCal"><a href="#">MORTGAGE CALCULATOR</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list testim"><a href="#">TESTIMONIALS</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list aboutUs" onclick="showAboutUs()"><a><span class="effect4">ABOUT US</span> <span><i class="fa-solid fa-chevron-down arrow4"></i></span><a/></div>
+                            <div class="aboutUs_list">
+                            <div class="row "><a class="op1 dropDownList" href="#">ABOUT TO COMPANY</a></div>
+                            <div class="row "><a class="op2 dropDownList" href="#">ACCOMPLISHMENT</a></div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list acc"><a href="#">ACCOUNT</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list logIn"><a href="#">LOG IN</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list signUp"><a href="#">SIGN UP</a></div>
+                        </div>
+                        <div class="row">
+                            <div class="col menu_list contactUs"><a href="#">CONTACT US</a></div>
+                        </div>
+    
+                    </div></div>
                 </div>
-                <div class="sidebar_link">
-                <div class="row">
-                    <div class="col menu_list ourProperties" onclick="showOP()"><a><span class="effect1">OUR PROPERTIES</span> <span><i class="fa-solid fa-chevron-down arrow1"></i></span><a/></div>
-                <div class="ourProperties_list">
-                    <div class="row "><a class="op1 dropDownList" href="./Pages_html/ourProperties/topSoldListings/topSoldListing.html">TOP SOLD LISTING</a></div>
-                    <div class="row "><a class="op2 dropDownList" href="./Pages_html/ourProperties/promoListings/promoListings.html">PROMO LISTING</a></div>
-                    <div class="row "><a class="op3 dropDownList" href="./Pages_html/ourProperties/latestListings/latestListings.html">LATEST LISTING</a></div>
-                    <div class="row "><a class="op4 dropDownList" href="./Pages_html/ourProperties/rentalListings/rentalListings.html">RENTAL LISTING</a></div>
-                    <div class="row "><a class="op5 dropDownList" href="./Pages_html/ourProperties/lotForSale/lotFotSale.html">LOT FOR SALE</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/lotForLease/lotForLease.html">LOT FOR LEASE</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/commercialProperties/commercialProperties.html">COMMERCIAL PROPERTIES</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/condoUnits/condoUnits.html">CONDO UNITS</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/apartmentListings/apartmentListings.html">APARTMENT LISTING</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/underConstruction/underConstruction.html">UNDER CONSTRUCTION</a></div>
-                    <div class="row "><a class="op6 dropDownList" href="./Pages_html/ourProperties/comingSoon/comingSoon.html">COMING SOON</a></div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list neighborhoods"><a href="./Pages_html/neighborhoods/neigborhoods.html">NEIGHBORHOODS</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list workWithUs" onclick="showWWUS()"><a><span class="effect2">WORK WITH US</span> <span><i class="fa-solid fa-chevron-down arrow2"></i></span><a/></div>
-                     <div class="workWithUs_list">
-                    <div class="row "><a class="op1 dropDownList" href="./Pages_html/workWithUs/Seller/seller.html">SELLER</a></div>
-                    <div class="row "><a class="op2 dropDownList" href="./Pages_html/workWithUs/Buyer/buyer.html">BUYER</a></div>
-                    <div class="row "><a class="op3 dropDownList" href="./Pages_html/workWithUs/Home_Valuation/homeValuation.html">HOME VALUATION</a></div>
-                    <div class="row "><a class="op4 dropDownList" href="./Pages_html/workWithUs/Meet_The_Team/meetTheTeam.html">MEET THE TEAM</a></div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list services" onclick="showServ()"><a><span class="effect3">SERVICES</span> <span><i class="fa-solid fa-chevron-down arrow3"></i></span><a/></div>
-                    <div class="services_list">
-                    <div class="row "><a class="op1 dropDownList" href="./Pages_html/services/appointmentPropertyTour/appointmentPropertyTour.html">APPOINTMENT PROPERTY TOUR</a></div>
-                    <div class="row "><a class="op2 dropDownList" href="./Pages_html/services/homeImprovementServices/homeImprovementServices.html">HOME IMPROVEMENT SERVICES</a></div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list mortCal"><a href="./Pages_html/mortgageCalculator/mortgageCalculator.html">MORTGAGE CALCULATOR</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list testim"><a href="./Pages_html/testimonials/testimonials.html">TESTIMONIALS</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list aboutUs" onclick="showAboutUs()"><a><span class="effect4">ABOUT US</span> <span><i class="fa-solid fa-chevron-down arrow4"></i></span><a/></div>
-                    <div class="aboutUs_list">
-                    <div class="row "><a class="op1 dropDownList" href="./Pages_html/aboutUs/aboutToCompany/aboutToCompany.html">ABOUT TO COMPANY</a></div>
-                    <div class="row "><a class="op2 dropDownList" href="./Pages_html/aboutUs/accomplishment/accomplishment.html">ACCOMPLISHMENT</a></div>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list acc"><a href="./Pages_html/account/Account/Account.html">ACCOUNT</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list logIn"><a href="./Pages_html/account/logIn/logIn.html">LOG IN</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list signUp"><a href="./Pages_html/account/signUp/signUp.html">SIGN UP</a></div>
-                </div>
-                <div class="row">
-                    <div class="col menu_list contactUs"><a href="./Pages_html/contactUs/contactUs.html">CONTACT US</a></div>
-                </div>
-            </div>
             </div>
         </div>
-        </header>
+       </header>
+
+       <section class="background d-flex justify-content-center align-items-center">
+        <form class="needs-validation" novalidate>
+            <div class="accountForm py-3 px-5">
+                <div class="LogIn mb-4">Log In</div>
+                <div><button class="button gg mb-2"><span class="px-3"><svg width="20px" height="20px" viewBox="-0.5 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Color-" transform="translate(-401.000000, -860.000000)">
+                            <g id="Google" transform="translate(401.000000, 860.000000)">
+                                <path d="M9.82727273,24 C9.82727273,22.4757333 10.0804318,21.0144 10.5322727,19.6437333 L2.62345455,13.6042667 C1.08206818,16.7338667 0.213636364,20.2602667 0.213636364,24 C0.213636364,27.7365333 1.081,31.2608 2.62025,34.3882667 L10.5247955,28.3370667 C10.0772273,26.9728 9.82727273,25.5168 9.82727273,24" id="Fill-1" fill="#FBBC05">
+                
+                </path>
+                                <path d="M23.7136364,10.1333333 C27.025,10.1333333 30.0159091,11.3066667 32.3659091,13.2266667 L39.2022727,6.4 C35.0363636,2.77333333 29.6954545,0.533333333 23.7136364,0.533333333 C14.4268636,0.533333333 6.44540909,5.84426667 2.62345455,13.6042667 L10.5322727,19.6437333 C12.3545909,14.112 17.5491591,10.1333333 23.7136364,10.1333333" id="Fill-2" fill="#EB4335">
+                
+                </path>
+                                <path d="M23.7136364,37.8666667 C17.5491591,37.8666667 12.3545909,33.888 10.5322727,28.3562667 L2.62345455,34.3946667 C6.44540909,42.1557333 14.4268636,47.4666667 23.7136364,47.4666667 C29.4455,47.4666667 34.9177955,45.4314667 39.0249545,41.6181333 L31.5177727,35.8144 C29.3995682,37.1488 26.7323182,37.8666667 23.7136364,37.8666667" id="Fill-3" fill="#34A853">
+                
+                </path>
+                                <path d="M46.1454545,24 C46.1454545,22.6133333 45.9318182,21.12 45.6113636,19.7333333 L23.7136364,19.7333333 L23.7136364,28.8 L36.3181818,28.8 C35.6879545,31.8912 33.9724545,34.2677333 31.5177727,35.8144 L39.0249545,41.6181333 C43.3393409,37.6138667 46.1454545,31.6490667 46.1454545,24" id="Fill-4" fill="#4285F4">
+                </path></g></g></g>
+                </svg></span>Sign in with Google</button></div>
+                <div><button class="button fb"><span class="px-1"><svg width="45px" height="45px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="24" cy="24" r="20" fill="#3B5998"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M29.315 16.9578C28.6917 16.8331 27.8498 16.74 27.3204 16.74C25.8867 16.74 25.7936 17.3633 25.7936 18.3607V20.1361H29.3774L29.065 23.8137H25.7936V35H21.3063V23.8137H19V20.1361H21.3063V17.8613C21.3063 14.7453 22.7708 13 26.4477 13C27.7252 13 28.6602 13.187 29.8753 13.4363L29.315 16.9578Z" fill="white"/>
+                    </svg></span>Sign in with Facebook</button></div>
+                <div class="d-flex items-center justify-between my-5">
+                    <div class="hrLine d-flex"></div>
+                    <div class="or text-center">or</div>
+                    <div class="hrLine"></div>
+                </div>
+                <div class="form-outline mb-4">
+                    <input type="email" class="form-control" id="validationCustom01" placeholder="Login Email*" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please Enter Valid Email.</div>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control" id="validationCustom01" placeholder="Password*" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please Enter Valid Password.</div>
+                  </div>
+
+                  <div class="row mb-4">
+                    <div class="col"><a href="#">Forgot Password?</a></div>
+                    <div class="col text-end"><a href="">Register</a></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col d-flex justify-content-center"><button type="button" class="btn btn-outline-secondary w-75"><a href="../../../index.html">Cancel</a></button></div>
+                    <div class="col d-flex justify-content-center"><button type="submit" class="btn btn-dark w-75"><a href="#">Log In</a></button></div>
+                  </div>
+            </div>
+        </form>
+       </section>
    
-   <section>
-        <div class="container mt-5">
-            <div class="row mb-5">
-                <div class="col-12 d-flex justify-content-center tittle">OUR LISTINGS</div>
-            </div>
-            <div class="row my-5 py-4">
-                <div class="col" id="show">
-                   <div id="showHover1">
-                    <p class="list_tittle">Golden Horizon Louisa</p><br>
-                    <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                      Brgy. Hugo Perez, Trece Martires,<br>
-                      Cavite, 4109</p><br>
-                    <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                      Single Attached House & Lot BR: 3<br> 
-                      Restroom: 2 Car Garage: 1</p><br>
-                    <p class="list_amount">TCP: Starts at 3,462,961</p>
-                </div><img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 1 1.png"></div>
-                <div class="col" id="show">
-                    <div id="showHover2">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 2 1.png"></div>
-            </div>
-            <div class="row my-5 py-4">
-                <div class="col" id="show">
-                    <div id="showHover3">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 3 1.png"></div>
-                <div class="col" id="show">
-                    <div id="showHover4">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 4 1.png"></div>
-            </div>
-            <div class="row my-5 py-4">
-                <div class="col" id="show">
-                    <div id="showHover5">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 5 1.png"></div>
-                <div class="col" id="show">
-                    <div id="showHover6">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 6 1.png"></div>
-            </div>
-            <div class="row my-5 py-4">
-                <div class="col" id="show">
-                    <div id="showHover7">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 7 1.png"></div>
-                <div class="col" id="show">
-                    <div id="showHover8">
-                        <p class="list_tittle">Golden Horizon Louisa</p><br>
-                        <p class="list_Address">Manors at Golden Horizon (Clubhouse),<br> 
-                          Brgy. Hugo Perez, Trece Martires,<br>
-                          Cavite, 4109</p><br>
-                        <p class="list_desc">FA: 66sq.m LA: 96sq.m House Type:<br>
-                          Single Attached House & Lot BR: 3<br> 
-                          Restroom: 2 Car Garage: 1</p><br>
-                        <p class="list_amount">TCP: Starts at 3,462,961</p>
-                    </div>
-                    <img class="img-fluid" src="../../../../IMPORTANT_RESOURCES/Images/topSoldListings/property 8 1.png"></div>
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="container-fluid p-lg-5 p-md-3 p-sm-0 footer mt-5 d-flex flex-column align-items-center">

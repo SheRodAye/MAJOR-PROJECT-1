@@ -9,8 +9,8 @@ body{
 }
 
 .background {
-    height: 600px;
-    background-image: url("../../../IMPORTANT_RESOURCES/Images/topSoldListings/topSoldListings.png");
+    height: 900px;
+    background-image: url("https://bddomingorealtyandconstructionworks.files.wordpress.com/2022/02/about-us-cover-1.png?w=1024");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
@@ -20,6 +20,14 @@ body{
 .nav_ {
 	position: fixed;
 }
+
+.sideBar_open{
+    position: fixed;
+    z-index: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40));
+    height: 1024px;
+    width: 100%;
+} 
 
 .sidebar_link a{
 	color: white;
